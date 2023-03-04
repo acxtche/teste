@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste</title>
+    <script>
+        function soma() {
+            var n1 = document.getElementById("numero1").value;
+            var n2 = document.getElementById("numero2").value;
+
+
+            resultado.innerHTML = parseInt(n1) + parseInt(n2);
+
+        }
+    </script>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            color: #000;
+            background: #fff;
+        }
+
+        #geral {
+            width: 960px;
+            margin: 0 auto;
+            background: #ddd;
+        }
+
+        #conteudo-1 {
+            float: left;
+            width: 240px;
+            background: #bfb;
+        }
+
+        #conteudo-2 {
+            float: right;
+            width: 720px;
+        }
+
+        #conteudo-2-1 {
+            float: left;
+            width: 480px;
+            background: #ddf;
+        }
+
+        #conteudo-2-2 {
+            float: right;
+            width: 240px;
+            background: #dff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><center>Html e CSS</h1>
+    <div id="geral">
+        <div id="cabecalho"></div>
+        <div id="principal">
+            <div id="conteudo-1">
+                <center>
+                    <a href="https://www.w3schools.com/">www.w3schools.com</a><br><br>
+                    <a href="https://www.liberato.com.br/">www.liberato.com.br</a><br><br>
+
+                </center>
+                        <form action="" method="post">
+                            <input id="numero1" type="text" />
+                            <input id="numero2" type="text" />
+                            <input type="button" value="somar" onclick="soma();" />
+                        </form>
+                        <span id="resultado">0</span>
+</div>
+            <div id="conteudo-2">
+                <div id="conteudo-2-1">
+                    <p>
+                        Texto<br>
+                        Abcdefg
+                    </p><br>
+                    <p>
+                        Texto<br>
+                        Hijklmno
+                    </p>
+
+                </div>
+                <div id="conteudo-2-2">
+                    <center><img src="classic-muscle-car-labels-free-vector.jpg">
+                </div>
+            </div>
+        </div>
+        <div id="rodape"></div>
+    </div>
+    
+</body>
+</html>
